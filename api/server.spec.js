@@ -8,4 +8,11 @@ describe('server testing', () => {
 
         expect(response.status).toBe(200)
     })
+
+    it("Should return server message", async () => {
+        const response = await request(server).get('/');
+
+        expect(response.body).toEqual('Lets do this')
+    })
+
 })

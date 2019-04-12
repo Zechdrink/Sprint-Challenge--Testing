@@ -4,7 +4,7 @@ server.use(express.json());
 
 
 server.get('/', (req, res, next) => {
-    res.send('Lets do this')
+    res.json('Lets do this')
 })
 
 
