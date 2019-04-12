@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Games = require('./games-modal');
+const Games = require('./game-modal');
 
 router.get('/', async (req, res) => {
     try{
